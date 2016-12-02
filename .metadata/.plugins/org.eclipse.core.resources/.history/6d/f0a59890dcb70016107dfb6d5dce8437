@@ -1,0 +1,70 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.StringTokenizer;
+
+public class program {
+	
+	public static void main(String[] args) throws IOException {
+		
+		int [] compassDirections = {0, 1, 2, 3};
+		
+		String [] directions = getInput("src/inputDay1.txt");
+		int x = 0;
+		int y = 0;
+		int facing = compassDirections[0];
+		
+		for (String direction : directions) {
+			char turn = direction.charAt(0);
+			int distance = Integer.parseInt(direction.substring(1));
+			if (turn == 'R') {
+				facing = compassDirections[(facing + 1) % compassDirections.length];
+			} else {
+				facing = compassDirections[((facing - 1) % compassDirections.length + compassDirections.length) % compassDirections.length];
+			}
+			
+			switch (facing) {
+			case 0:
+				y += distance;
+				break;
+			case 1:
+				x += distance;
+				break;
+			case 2:
+				y -= distance;
+				break;
+			case 3:
+				x -= distance;
+				break;
+			}
+		}
+		
+		System.out.println(x + " " + y);
+		
+
+	}
+	
+	public static String[] getInput(String p) throws IOException {
+		BufferedReader br = new BufferedReader(new FileReader(p));
+		String fullString = "";
+		
+		String str = null;
+		while((str = br.readLine()) != null){
+			fullString += str;
+		}
+		
+		br.close();
+		fullString = fullString.replaceAll(" ", "");
+		
+		StringTokenizer st = new StringTokenizer(fullString, ",");
+		String [] elements = new String[st.countTokens()];
+		int i = 0;
+		while (st.hasMoreElements()) {
+			String token = (String) st.nextElement();
+			elements[i++] = token;
+		}
+		return elements;
+	}
+
+
+}

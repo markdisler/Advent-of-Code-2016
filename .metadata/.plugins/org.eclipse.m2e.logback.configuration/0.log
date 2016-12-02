@@ -1,0 +1,5 @@
+2016-12-01 10:08:39,870 [Worker-3] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2016-12-01 15:58:15,631 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2016-12-02 00:51:04,293 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2016-12-02 01:26:26,898 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2016-12-02 13:50:33,265 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
