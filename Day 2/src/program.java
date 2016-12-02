@@ -27,6 +27,8 @@ public class program {
 		int y = 2;
 		String code = "";
 		
+		// Only works with the part 2 answer due to some minor changes
+		
 		for (int i = 0; i < instructions.length; i++) {
 			for (int j = 0; j < instructions[i].length(); j++) {
 				char direction = instructions[i].charAt(j);
