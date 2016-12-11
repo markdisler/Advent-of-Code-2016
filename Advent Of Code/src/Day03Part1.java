@@ -3,7 +3,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class Day3Part1 {
+public class Day03Part1 {
 	public static void main (String [] args) throws IOException {
 		String [] triangles = getInput("src/inputDay3.txt");
 		int numValidTriangles = 0;

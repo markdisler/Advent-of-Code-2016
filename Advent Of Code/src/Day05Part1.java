@@ -3,7 +3,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class Day5Part1 {
+public class Day05Part1 {
 
 	public static void main (String [] args) throws IOException {
 		String s = "wtnhxymk";

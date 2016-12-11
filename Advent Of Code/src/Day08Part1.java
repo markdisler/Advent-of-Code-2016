@@ -3,7 +3,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class Day8Part2 {
+public class Day08Part1 {
 
 	public static void main (String [] args) throws IOException {
 
@@ -41,16 +41,16 @@ public class Day8Part2 {
 			}
 		}
 
-		// Display the screen
+		// Count up the number of on-pixels
+		int count = 0;
 		for (int i = 0; i < screen.length; i++) {
 			for (int j = 0; j < screen[i].length; j++) {
-				if (screen[i][j] == 1)  // show the 1's
-					System.out.print(screen[i][j]);
-				else
-					System.out.print(" ");  // make the 0's just show a space for readability purposes
+				if (screen[i][j] == 1) {
+					count++;
+				}
 			}
-			System.out.println();
 		}
+		System.out.println(count);
 	}
 
 	public static void shiftColumn(int c, int[][] array) {

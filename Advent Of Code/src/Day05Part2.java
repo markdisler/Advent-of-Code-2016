@@ -1,6 +1,6 @@
 import java.io.IOException;
 
-public class Day5Part2 {
+public class Day05Part2 {
 
 	public static void main (String [] args) throws IOException {
 		String s = "wtnhxymk";

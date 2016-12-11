@@ -3,7 +3,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class Day7Part1 {
+public class Day07Part1 {
 
 	public static void main (String [] args) throws IOException {
 		ArrayList<String>lines = getInput("src/inputDay7.txt"); // Pull data from file

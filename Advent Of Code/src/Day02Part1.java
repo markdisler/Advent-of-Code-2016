@@ -3,43 +3,41 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class Day2Part2 {
+public class Day02Part1 {
 	public static void main (String [] args) throws IOException {
 		String [] instructions = getInput("src/inputDay2.txt");
 		
-		char [][] keypad = {
-				{' ', ' ', '1', ' ', ' '},
-				{' ', '2', '3', '4', ' '},
-				{'5', '6', '7', '8', '9'},
-				{' ', 'A', 'B', 'C', ' '},
-				{' ', ' ', 'D', ' ', ' '}
+		int [][] keypad = {
+				{1, 2, 3},
+				{4, 5, 6},
+				{7, 8, 9}
 		};
 		
-		int x = 0;
-		int y = 2;
+		int x = 1;
+		int y = 1;
 		String code = "";
-		
+				
 		for (int i = 0; i < instructions.length; i++) {
 			for (int j = 0; j < instructions[i].length(); j++) {
 				char direction = instructions[i].charAt(j);
 				switch (direction) {
 				case 'U':
-					if (y != 0 && keypad[y-1][x] != ' ') {
+					if (y != 0) {
 						y--;
 					} 
 					break;
 				case 'D':
-					if (y != 4 && keypad[y+1][x] != ' ') {
+					if (y != 2) {
 						y++;
 					} 
 					break;
 				case 'R':
-					if (x != 4 && keypad[y][x+1] != ' ') {
+					if (x != 2) {
 						x++;
 					} 
 					break;
 				case 'L':
-					if (x != 0 && keypad[y][x-1] != ' ') {
+					if (x != 0) {
 						x--;
 					} 
 					break;
@@ -66,5 +64,4 @@ public class Day2Part2 {
 		}
 		return array;
 	}
-	
 }

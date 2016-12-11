@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 
-public class Day6Part2 {
+public class Day06Part1 {
 
 	public static void main (String [] args) throws IOException {
 		ArrayList<String>lines = getInput("src/inputDay6.txt"); // Pull data from file
@@ -18,11 +18,11 @@ public class Day6Part2 {
 			for (String s : lines) { 
 				col += s.charAt(i);
 			}
-			System.out.print(leastFrequentCharacterInString(col));
+			System.out.print(mostFrequentCharacterInString(col));
 		}
 	}
 	
-	public static String leastFrequentCharacterInString(String s) {
+	public static String mostFrequentCharacterInString(String s) {
 
 		Map<String, Integer> map = new HashMap<String, Integer>();
 		for (char c : s.toCharArray()) {
@@ -46,7 +46,7 @@ public class Day6Part2 {
 			}
 		});
 		
-		return "" + list.get(list.size()-1).c;
+		return "" + list.get(0).c;
 	}
 	
 	public static int count(char c, String inStr) {
