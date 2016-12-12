@@ -8,7 +8,7 @@ public class Day08Part1 {
 	public static void main (String [] args) throws IOException {
 
 		// Pull data from file
-		ArrayList<String>lines = getInput("src/inputDay8.txt"); 
+		ArrayList<String>lines = getInput("src/inputDay08.txt"); 
 
 		// Create board 50 wide and 6 tall
 		int[][] screen = new int[6][50];

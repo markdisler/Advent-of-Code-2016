@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class Day07Part1 {
 
 	public static void main (String [] args) throws IOException {
-		ArrayList<String>lines = getInput("src/inputDay7.txt"); // Pull data from file
+		ArrayList<String>lines = getInput("src/inputDay07.txt"); // Pull data from file
 
 		int count = 0;  // keep count
 		for (String ip : lines) {

@@ -8,7 +8,7 @@ public class Day01Part1 {
 	public static void main(String[] args) throws IOException {
 		int [] compassDirections = {0, 1, 2, 3}; 
 
-		String [] directions = getInput("src/inputDay1.txt");
+		String [] directions = getInput("src/inputDay01.txt");
 		int x = 0, y = 0;
 		int facing = compassDirections[0];
 

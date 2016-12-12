@@ -11,7 +11,7 @@ import java.util.Map.Entry;
 public class Day04Part2 {
 	
 	public static void main (String [] args) throws IOException {
-		ArrayList<String>rooms = getInput("src/inputDay4.txt"); // Pull data from file
+		ArrayList<String>rooms = getInput("src/inputDay04.txt"); // Pull data from file
 	
 		for (String s : rooms) { //go through each room
 			

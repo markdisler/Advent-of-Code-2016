@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class Day03Part2 {
 	public static void main (String [] args) throws IOException {
-		String [][] triangleMatrix = getInput("src/inputDay3.txt");
+		String [][] triangleMatrix = getInput("src/inputDay03.txt");
 		ArrayList<String> triangles = getTriangles(triangleMatrix);
 		
 		int numValidTriangles = 0;

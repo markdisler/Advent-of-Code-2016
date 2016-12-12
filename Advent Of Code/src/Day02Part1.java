@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class Day02Part1 {
 	public static void main (String [] args) throws IOException {
-		String [] instructions = getInput("src/inputDay2.txt");
+		String [] instructions = getInput("src/inputDay02.txt");
 		
 		int [][] keypad = {
 				{1, 2, 3},

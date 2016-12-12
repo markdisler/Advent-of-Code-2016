@@ -9,7 +9,7 @@ public class Day01Part2 {
 		int [] compassDirections = {0, 1, 2, 3}; 
 
 		ArrayList<String> placesIveBeen = new ArrayList<String>(); //List of all places ive been
-		String [] directions = getInput("src/inputDay1.txt");
+		String [] directions = getInput("src/inputDay01.txt");
 		int x = 0, y = 0;
 		int facing = compassDirections[0];
 		
