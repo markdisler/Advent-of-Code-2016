@@ -12,7 +12,6 @@ INDEX VERSION 1.129+/Users/Mark/Desktop/Programming/AdventOfCode2016/.metadata/.
 576073405.index
 527849843.index
 204893112.index
-869074144.index
 2465022724.index
 624708564.index
 3157663476.index
